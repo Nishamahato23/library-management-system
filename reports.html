@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Reports</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="maintenance.html">Maintenance</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Reports</h2>
+        <section>
+            <h3>Books Available</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Title</th>
+                        <th>Author Name</th>
+                        <th>Genre</th>
+                        <th>Available</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example row. In actual implementation, rows will be dynamically generated -->
+                    <tr>
+                        <td>The Great Gatsby</td>
+                        <td>F. Scott Fitzgerald</td>
+                        <td>Fiction</td>
+                        <td><input type="radio" name="bookSelection" value="1"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section>
+            <h3>Books Issued</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Title</th>
+                        <th>Author Name</th>
+                        <th>Issued Date</th>
+                        <th>Return Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example row. In actual implementation, rows will be dynamically generated -->
+                    <tr>
+                        <td>1984</td>
+                        <td>George Orwell</td>
+                        <td>01-Jan-2025</td>
+                        <td>15-Jan-2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    
+</body>
+</html>

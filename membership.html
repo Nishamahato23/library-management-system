@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="maintenance.html">Maintenance</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Membership</h2>
+
+        <!-- Add Membership Section -->
+        <section>
+            <h3>Add Membership</h3>
+            <form id="addMembershipForm">
+                <label for="memberName">Name:</label>
+                <input type="text" id="memberName" name="memberName" required>
+                
+                <label for="memberEmail">Email:</label>
+                <input type="email" id="memberEmail" name="memberEmail" required>
+                
+                <label for="memberPhone">Phone:</label>
+                <input type="tel" id="memberPhone" name="memberPhone" required>
+                
+                <label for="membershipType">Membership Type:</label>
+                <select id="membershipType" name="membershipType" required>
+                    <option value="6 months">6 months</option>
+                    <option value="1 year">1 year</option>
+                    <option value="2 years">2 years</option>
+                </select>
+                
+                <button type="submit">Add Membership</button>
+            </form>
+        </section>
+
+        <!-- Update Membership Section -->
+        <section>
+            <h3>Update Membership</h3>
+            <form id="updateMembershipForm">
+                <label for="membershipNumber">Membership Number:</label>
+                <input type="text" id="membershipNumber" name="membershipNumber" required>
+                
+                <label for="updateMembershipType">Membership Type:</label>
+                <select id="updateMembershipType" name="updateMembershipType">
+                    <option value="6 months">6 months</option>
+                    <option value="1 year">1 year</option>
+                    <option value="2 years">2 years</option>
+                </select>
+                
+                <label for="membershipStatus">Membership Status:</label>
+                <select id="membershipStatus" name="membershipStatus" required>
+                    <option value="active">Active</option>
+                    <option value="expired">Expired</option>
+                    <option value="cancelled">Cancelled</option>
+                </select>
+                
+                <button type="submit">Update Membership</button>
+            </form>
+        </section>
+    </main>
+    
+    
+</body>
+</html>

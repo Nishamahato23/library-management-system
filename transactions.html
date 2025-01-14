@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Transactions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="maintenance.html">Maintenance</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Transactions</h2>
+
+        <!-- Book Issue Section -->
+        <section>
+            <h3>Book Issue</h3>
+            <form id="bookIssueForm">
+                <label for="issueBookTitle">Book Title:</label>
+                <input type="text" id="issueBookTitle" name="issueBookTitle" required>
+                
+                <label for="issueAuthorName">Author Name:</label>
+                <input type="text" id="issueAuthorName" name="issueAuthorName" readonly>
+                
+                <label for="issueDate">Issue Date:</label>
+                <input type="date" id="issueDate" name="issueDate" required min="2025-01-14">
+                
+                <label for="returnDate">Return Date:</label>
+                <input type="date" id="returnDate" name="returnDate" required min="2025-01-29">
+                
+                <label for="issueRemarks">Remarks:</label>
+                <textarea id="issueRemarks" name="issueRemarks"></textarea>
+                
+                <button type="submit">Issue Book</button>
+            </form>
+        </section>
+
+        <!-- Book Return Section -->
+        <section>
+            <h3>Return Book</h3>
+            <form id="bookReturnForm">
+                <label for="returnBookTitle">Book Title:</label>
+                <input type="text" id="returnBookTitle" name="returnBookTitle" required>
+                
+                <label for="returnAuthorName">Author Name:</label>
+                <input type="text" id="returnAuthorName" name="returnAuthorName" readonly>
+                
+                <label for="returnSerialNo">Serial No:</label>
+                <input type="text" id="returnSerialNo" name="returnSerialNo" required>
+                
+                <label for="returnIssueDate">Issue Date:</label>
+                <input type="date" id="returnIssueDate" name="returnIssueDate" readonly>
+                
+                <label for="returnReturnDate">Return Date:</label>
+                <input type="date" id="returnReturnDate" name="returnReturnDate" required>
+                
+                <button type="submit">Return Book</button>
+            </form>
+        </section>
+
+        <!-- Fine Payment Section -->
+        <section>
+            <h3>Pay Fine</h3>
+            <form id="finePayForm">
+                <label for="fineBookTitle">Book Title:</label>
+                <input type="text" id="fineBookTitle" name="fineBookTitle" readonly>
+                
+                <label for="fineAuthorName">Author Name:</label>
+                <input type="text" id="fineAuthorName" name="fineAuthorName" readonly>
+                
+                <label for="fineAmount">Fine Amount:</label>
+                <input type="number" id="fineAmount" name="fineAmount" readonly>
+                
+                <label for="finePaid">Fine Paid:</label>
+                <input type="checkbox" id="finePaid" name="finePaid">
+                
+                <label for="fineRemarks">Remarks:</label>
+                <textarea id="fineRemarks" name="fineRemarks"></textarea>
+                
+                <button type="submit">Pay Fine</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="lib.html">Home</a></li>
+                <li><a href="maintenance.html">Maintenance</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to the Library Management System</h2>
+            <p>This application helps you manage books, memberships, and transactions efficiently.</p>
+        </section>
+        <section>
+            <h2>Admin Login</h2>
+            <form id="adminLoginForm">
+                <label for="adminUsername">Username:</label>
+                <input type="text" id="adminUsername" name="adminUsername" required>
+                <label for="adminPassword">Password:</label>
+                <input type="password" id="adminPassword" name="adminPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section>
+            <h2>User Login</h2>
+            <form id="userLoginForm">
+                <label for="userUsername">Username:</label>
+                <input type="text" id="userUsername" name="userUsername" required>
+                <label for="userPassword">Password:</label>
+                <input type="password" id="userPassword" name="userPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

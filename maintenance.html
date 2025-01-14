@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Maintenance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="maintenance.html">Maintenance</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Maintenance</h2>
+        <section>
+            <h3>Add Book</h3>
+            <form id="addBookForm">
+                <label for="bookTitle">Book Title:</label>
+                <input type="text" id="bookTitle" name="bookTitle" required>
+                
+                <label for="authorName">Author Name:</label>
+                <input type="text" id="authorName" name="authorName" required>
+                
+                <label for="publicationYear">Publication Year:</label>
+                <input type="number" id="publicationYear" name="publicationYear" required>
+                
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre" required>
+                
+                <label for="isbn">ISBN:</label>
+                <input type="text" id="isbn" name="isbn" required>
+                
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+        
+        <section>
+            <h3>Update Book</h3>
+            <form id="updateBookForm">
+                <label for="bookId">Book ID:</label>
+                <input type="text" id="bookId" name="bookId" required>
+                
+                <label for="newBookTitle">New Book Title:</label>
+                <input type="text" id="newBookTitle" name="newBookTitle">
+                
+                <label for="newAuthorName">New Author Name:</label>
+                <input type="text" id="newAuthorName" name="newAuthorName">
+                
+                <label for="newPublicationYear">New Publication Year:</label>
+                <input type="number" id="newPublicationYear" name="newPublicationYear">
+                
+                <label for="newGenre">New Genre:</label>
+                <input type="text" id="newGenre" name="newGenre">
+                
+                <label for="newIsbn">New ISBN:</label>
+                <input type="text" id="newIsbn" name="newIsbn">
+                
+                <button type="submit">Update Book</button>
+            </form>
+        </section>
+    </main>
+   
+</body>
+</html>
